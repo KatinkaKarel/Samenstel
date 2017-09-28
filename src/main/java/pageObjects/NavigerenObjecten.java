@@ -13,8 +13,8 @@ public class NavigerenObjecten {
 //	}
 	
 	
-	public static WebElement NavigerenZorg(WebDriver driver){ 		
-		element = driver.findElement(By.linkText("Zorg"));		
+	public static WebElement NavigerenSamenstellen(WebDriver driver){ 		
+		element = driver.findElement(By.linkText("Samenstellen"));		
 		return element;
 	}
 	
@@ -37,11 +37,11 @@ public static WebElement SelectNew(WebDriver driver){
 	element = parent.findElement(By.cssSelector("[title='Nieuw']"));
 	return element;
 	}
-
+/*
 public static WebElement SelectSaldibalans(WebDriver driver){
     element = driver.findElement(By.partialLinkText("Saldibalans"));
     return element;	
-	}
+	}*/
 
 public static WebElement SelectImport(WebDriver driver){	
 	element = driver.findElement(By.cssSelector("*[class^='btn-group']"));			
@@ -72,13 +72,13 @@ public static WebElement SelectEntity(WebDriver driver){
 		element = driver.findElement(By.cssSelector("[placeholder='Begin met typen om resultaten te zien.']"));
 	return element;
 }
-
+/*
 public static WebElement SaveProject(WebDriver driver){	
 	WebElement parent = driver.findElement(By.className("GJJ2145DK4 GJJ2145DH5 GJJ2145DCID"));
 	element = parent.findElement(By.partialLinkText("Opslaan"));
 	return element;
 }
-
+*/
 }
 
 

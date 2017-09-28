@@ -81,19 +81,19 @@ public class Steps  {
 	}
 	
 
-	@When("^Select the Zorg module$")
-	public void select_the_Zorg_module() throws Throwable {
+	@When("^Select the module samenstellen$")
+	public void select_the_module_samenstellen() throws Throwable {
 
 		Thread.sleep(1500);
 		NavigerenObjecten.ClickCloud(driver).click();
 	
-		NavigerenObjecten.NavigerenZorg(driver).click();
+		NavigerenObjecten.NavigerenSamenstellen(driver).click();
 		
 		 
 	}
 	
-	@When("^Create a new Zorgfile$")
-	public void create_a_new_zorgfile() throws Throwable {
+	@When("^Create a new Samenstellenfile$")
+	public void create_a_new_samenstellenfile() throws Throwable {
 
 		Thread.sleep(3000);
 		NavigerenObjecten.SelectNew(driver).click();
