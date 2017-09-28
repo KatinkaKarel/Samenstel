@@ -86,8 +86,7 @@ public class Steps  {
 
 		Thread.sleep(1500);
 		NavigerenObjecten.ClickCloud(driver).click();
-	
-		NavigerenObjecten.NavigerenSamenstellen(driver).click();
+			NavigerenObjecten.NavigerenSamenstellen(driver).click();
 		
 		 
 	}

@@ -22,8 +22,8 @@ Feature: vullen formulieren
   
     Given I want to login with browser <Browser>
     When I type username "katinka.karel@caseware.nl" and password "WelkomKatinka01"
-    And Select the module Samenstellen
-    And Create a new Samenstellenfile
+    And Select the Samenstellen module
+    And Create a new samenstellenfile
   	And Importeer saldibalans
   	And Sluit browser
 		 
@@ -37,8 +37,8 @@ Feature: vullen formulieren
   
     Given I want to login with browser <Browser>
     When I type username "katinka.karel@caseware.nl" and password "WelkomKatinka01"
-    And Select the module Samenstellen
-    And Create a new Samenstellen file 
+    And Select the Samenstellen module
+    And Create a new samenstellenfile
     And in entity nameentity "Katinka"
     And with name nameproject "Kat+date"
     #And open the Project "katimka"
