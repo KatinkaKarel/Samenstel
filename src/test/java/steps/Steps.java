@@ -15,7 +15,7 @@ import codebase.*;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
+import pageObjects.CreateProjectObject;
 import pageObjects.LoginObjecten;
 import pageObjects.NavigerenObjecten;
 
@@ -95,7 +95,7 @@ public class Steps  {
 	public void create_a_new_samenstellenfile() throws Throwable {
 
 		Thread.sleep(3000);
-		NavigerenObjecten.SelectNew(driver).click();
+		CreateProjectObject.SelectNew(driver).click();
 		driver.findElement(By.cssSelector("[placeholder='Begin met typen om resultaten te zien.']")).click();
 	//	LoginObjecten.NameEntity(driver).sendKeys(NameEntity);
 		
@@ -106,7 +106,7 @@ public class Steps  {
 	public void in_entity_NameEntity (String NameEntity) throws Throwable {
 
 		Thread.sleep(1500);
-		NavigerenObjecten.SelectEntity(driver).click();
+		CreateProjectObject.SelectEntity(driver).click();
 		LoginObjecten.NameEntity(driver).sendKeys(NameEntity);
 		LoginObjecten.NameEntity(driver).sendKeys(Keys.RETURN);
 		
@@ -122,8 +122,7 @@ public class Steps  {
 		
 		Thread.sleep(1500);
 		LoginObjecten.NameProject(driver).sendKeys(Voorbeeld);
-		//NavigerenObjecten.SaveProject(driver).click();
-		driver.findElement(By.xpath("//button[contains(.,'Opslaan')]")).click();
+		LoginObjecten.NameProject(driver).sendKeys(Keys.RETURN);
 	
 		}
 	
@@ -135,9 +134,9 @@ public class Steps  {
 		driver.findElement(By.partialLinkText("Saldibalans")).click();
 		
 		Thread.sleep(1500);
-		NavigerenObjecten.SelectImport(driver);
-		NavigerenObjecten.SelectImportKlik(driver).click();
-		NavigerenObjecten.SelectImportCSV(driver).click();
+		CreateProjectObject.SelectImport(driver);
+		CreateProjectObject.SelectImportKlik(driver).click();
+		CreateProjectObject.SelectImportCSV(driver).click();
 	//	NavigerenObjecten.SelectFile(driver).click();
 		Thread.sleep(1500);
 	}
