@@ -92,7 +92,7 @@ public class Steps  {
 		 
 	}
 	
-	@When("^Create a new Samenstellenfile$")
+	@When("^Create a new samenstellenfile$")
 	public void create_a_new_samenstellenfile() throws Throwable {
 
 		Thread.sleep(3000);
